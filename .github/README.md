@@ -157,7 +157,7 @@ Lower versions of Visual Studio should work, but I used VS 2019.
 ‎
 ## License:
 
-This software is licensed under the GNU General Public License v3 (GPL-3) licence. Please see https://www.gnu.
+This software is licensed under the GNU General Public License v3 (GPL-3) licence. Please see https://www.gnu.org/licenses/gpl-3.0.en.html for more information.
 
 ‎
 ## Credits:
