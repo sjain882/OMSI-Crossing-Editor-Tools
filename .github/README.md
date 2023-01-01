@@ -1,119 +1,128 @@
-# HELEN ClearType Control Toggler
+# OMSI Crossing Editor Tools
 
 <div align="center">
 
-![SCREENSHOT](https://github.com/sjain882/HELEN-ClearType-Toggle/blob/main/.github/Preview.gif?raw=true)
+![SCREENSHOT](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/Banner.png?raw=true)
 
-https://user-images.githubusercontent.com/43217178/175432463-e83ff24a-7153-433a-bc8a-a94c0b25053a.mp4
+[![ISSUES](https://img.shields.io/github/issues/sjain882/OMSI-Crossing-Editor-Tools?color=FF6D00&style=flat)](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/issues)
+[![VERSION](https://img.shields.io/github/v/release/sjain882/OMSI-Crossing-Editor-Tools?color=FF6D00&style=flat&label=version)](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/releases/latest)
+[![DOWNLOAD](https://img.shields.io/github/downloads/sjain882/OMSI-Crossing-Editor-Tools/total?color=2E7D32&label=Download&style=flat)]()
+[![FRANÇAIS & DEUTSCH](https://img.shields.io/badge/-Français%20&%20Deutsch-%2301579B?style=flat)]()
 
-[![ISSUES](https://img.shields.io/github/issues/sjain882/HELEN-ClearType-Toggle?color=FF6D00&style=flat)](https://github.com/sjain882/HELEN-ClearType-Toggle/issues)
-[![VERSION](https://img.shields.io/github/v/release/sjain882/HELEN-ClearType-Toggle?color=FF6D00&style=flat&label=version)](https://github.com/sjain882/HELEN-ClearType-Toggle/releases/latest)
-[![DOWNLOAD](https://img.shields.io/github/downloads/sjain882/HELEN-ClearType-Toggle/total?color=2E7D32&label=Download&style=flat)](https://github.com/sjain882/HELEN-ClearType-Toggle/releases/latest/download/HelenClearTypeToggle.exe)
-
-Simple patcher for HELEN software that toggles its ability to enable or disable Windows ClearType.
-
-Tested on Windows XP & above.
+Better camera controls for [OMSI 2](https://store.steampowered.com/app/252530)'s Crossing Editor!
 </div>
 
 ‎
-## Supported versions:
+## Why?
 
-- v3.03.00 (or v3.3)
-- v3.10.02
-- v3.12.06 (or v3.12.6)
+For years, map developers have been forced to use the basic OMSI Crossing Editor (`OMSI 2\SDK\OmsiObjEditP.exe`) in order to add pathways to their maps.
 
-‎
-## Usage:
+In this tool, the only way to control the zoom level of the camera is to click a separate menu and drag a slider with your mouse! This is very painful to use.
 
-If you are using Windows XP - please download & install .NET Framework 4 from [here](https://www.microsoft.com/en-gb/download/details.aspx?id=17718).
-
-If you are using Windows 7 - please obtain .NET Framework 4 via Windows Update or from [here](https://www.microsoft.com/en-gb/download/details.aspx?id=17718).
-
-If you are using Windows 10 - no extra steps are required prior to usage of this application.
-
-1. Please ensure you have a currently supported version of HELEN installed and that all HELEN windows are closed.
-
-2. Download the latest release from [here](https://github.com/sjain882/HELEN-ClearType-Toggle/releases/latest/download/HelenClearTypeToggle.exe) and run it.
-
-3. Click on the `...` button in the first section to open your `HELEN.exe` executable file.
-
-4. Check the version information section to ensure the correct version was detected. If it is patchable, the below controls will become available.
-
-5. Select your desired behaviour from the next section.
-
-6. Confirm your changes with the Save button. A backup copy of the original will automatically be created (this won't be overwritten by future patches)
+On top of this, the default camera FoV (Field-of View) value is locked at 30°, compared to 45° inside OMSI 2's main game, which is slightly disorienting.
 
 ‎
-## Command line parameters (any order):
+## Features
 
-- `--help`, `-h` or any unrecognised arguments: Displays a help page with the information of this section.
+Not to worry - with OMSI Crossing Editor tools, you now have full control over the Zoom & FOV inside the OMSI Crossing Editor! With my tool, you can:
 
-- `--path`, `-p`: Followed by a space then a full or relative (from directory tool was launched from) path to the HELEN executable (*.exe) file in quotes. e.g., `--path "C:\Applications\HELEN.exe"`.
-    - Required in conjunction with `--enable` or `--disable` parameters.
+- Set default values for the camera zoom & FoV
+- Set minimum and maximum limits for the camera zoom & FoV
+- Easily adjust the Zoom & FoV with your mouse's scroll wheel (including holding the SHIFT key to increase/decrease speed)
 
-- `--enable`, `-e`: Patches the HELEN executable so that it has control over ClearType (it will attempt to turn ClearType on/off as required - default). Displays message box indicating success/failure.
-
-- `--disable`, `-d`: Patches the HELEN executable so that it has no control over ClearType (it will never attempt to turn ClearType on/off). Displays message box indicating success/failure.
-
-- Example usage: `HelenClearTypeToggle -p "C:\Applications\HELEN.exe" --enable`
-
-- If no arguments are specified, the GUI will launch.
+    - The scrolling speed can be fine tuned via configuration files
 
 ‎
-## Why is the patch needed?
 
-When certain parts of HELEN's GUI are accessed, HELEN will disable Windows ClearType system wide. This is important for certain functionality such as importing fonts - if ClearType is enabled, the result is quite jumbled - if it is disabled, the font is intact.
+| Control  | Effect |
+| ------------- | ------------- |
+| Scroll Mouse Wheel Up/Down  | Increase/Decrease Zoom  |
+| Hold down SHIFT key + Scroll Mouse Wheel Up/Down  | 	Increase/Decrease Zoom (fast)  |
+| Hold down CTRL key + Scroll Mouse Wheel Up/Down  | 	Increase/Decrease FoV (Field-Of-View)  |
 
-However, it will unnecessarily disable ClearType in parts of the GUI that have links to such functionality (e.g., buttons), even if the part of the GUI holding that link doesn't need to disable ClearType.
+[Français & Deutsch](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/Controls.png?raw=true)
 
-Some users rarely need to access functionality that needs to disable ClearType, but regularly access parts of the GUI that unnecessarily disable ClearType.
+There is also multilingual support for English, French, German, Polish and Finnish.
 
-Therefore, this patch is offered as a toggle instead of a one-way disable.
-
-It can be infuriating to have ClearType unnecessarily disabled system wide as this makes text in Windows appear very low quality and can make it difficult to read. 
-
-Existing windows will slowly have their text degrade to poor quality as the user mouses over them and although HELEN attempts to re-enable ClearType after the GUI it was disabled for is exited, for this can sometimes fail for unknown reasons, requiring the user to manually re-enable ClearType. This worsens the infuriating effect.
-
-‎
-## How the patch works
-
-HELEN makes calls to the [`SystemParametersInfoA`](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) system function of `user32.dll` to enable or disable ClearType.
-
-This function can take argument `SPI_GETCLEARTYPE` (`0x4A` in HELEN binary) or `SPI_SETCLEARTYPE` (`0x4B` in HELEN binary) to read or write to the ClearType bit in Windows respectively.
-
-We can simply "null" any attempts to disable ClearType in the first place by switching the `SPI_SETCLEARTYPE` (changes the status of ClearType) arguments to `SPI_GETCLEARTYPE` (returns the current status of ClearType) arguments.
-
-This is by no means a perfect solution, but since the remaining arguments of the replaced `SPI_SETCLEARTYPE` function calls in HELEN are presumed to become invalid; the worst result is the function [returning false](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-systemparametersinfoa#return-value); the best result is the function successfully getting the ClearType bit.
-
-Since the relevant `SystemParametersInfoA` calls are never assigned to a value, the form code shouldn't be influenced by it. Stability testing has reflected this.
-
-A perfect (in code terms) solution would be to move the `SystemParametersInfoA` calls so that only the forms which explicitly require ClearType to be off actually disable ClearType. This would eliminate the need for a toggle patcher, and thus the need to ever use the patcher again. However:
-
-- Due to the way some forms are split up, this isn't always possible.
-
-- This would be a much more advanced patch - I do not currently have the required expertise or time for this and it creates more possibilities for the patch to go wrong.
+Please note: Additional functionality such as customization of modifier keys is reserved for potential future updates.
 
 ‎
-## FAQ:
+## Important!
 
-**Q:** Why must the patcher run as administrator?
+###### Anti-cheat warning
 
-**A:** The default installation location for `HELEN.exe` is a directory inside `C:\Program Files (x86)` which requires administrator permissions to write to by default. Since most users do not change this default directory, this will avoid a lot of potential confusion resulting from unauthorised access errors.
+- Due to the nature of this tool, it is possible some game anti-cheats will flag this software. 
 
-**A:** Since drag and dropping files in Windows is unsupported for elevated applications, the ability to drag and drop HELEN.exe onto the patcher window for ease of use was omitted from development for the same reason.
+- Thus, **please ensure you keep all games which have anti-cheats closed while running OMSI 2 with OMSI Presentation Tools.** 
 
-**Q:** Why does the application target the now outdated .NET Framework 4?
+###### More information
 
-**A:** This is to ensure it is compatible with Windows XP & above, since HELEN should run on the same operating systems.
+- In theory there should be no issues since this tool restricts itself to memory regions OMSI has read-access to, but its possible it could be flagged up. The same applies to antivirus detections.
+
+- As well as this, the OmniNavigation and Bus Company Simulator Addon DLCs read directly from to OMSI 2's process memory, similar to this tool. These DLCs have been public for several years and nobody has reported issues yet.
+
+- Although all of these cases are extremely unlikely, if not impossible, please note that **I cannot be held personally responsible (directly or indirectly)** if usage of this tool results in an anti-cheat ban in other games, the breaking of your OMSI install or other software, or loss of data.
+
+- Users will be reminded of this via a pop-up message box upon first launch of the tool (only).
+
+‎
+## Installation & Usage (!)
+
+**---> ❗ NOTE - These are not what you expect! It is critical that you follow all the below steps and in the exact order given! ❗ <---**
+
+❗ Please note that this tool requires .NET Framework 4.7.2 to be installed.
+If you are using Windows 7 or a version of Windows 10 released before April 2018, you must install it manually from [here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472) ("Runtime").
+Otherwise, no action is required.
+
+❗ Please note that the OMSI Crossing Editor has a bug where, after an unspecified amount of time, the main view will freeze randomly. This bug is not caused by OMSI Crossing Editor Tools. If this happens, simply save your work, close and re-open the application, then disable and re-enable OMSI Crossing Editor Tools.
+
+1. Ensure you have OMSI Crossing Editor downloaded correctly:
+
+    --- ❗ **The file name must be OmsiObjEditP - the tool will not work if you have renamed it!**<br/>
+    --- The file must be located in the SDK folder of your OMSI 2 installation folder, so OMSI Crossing Editor can work correctly.<br/>
+    --- e.g., C:\Program Files (x86)\Steam\steamapps\common\OMSI 2\SDK\OmsiObjEditP.exe<br/>
+    --- You can download the OMSI Crossing Editor from here (extract to the OMSI 2\SDK folder)
+    ‎
+2. Download the OMSI Crossing Editor Tools .zip archive, open it, and extract the contents of the "Tool" folder to any folder on your PC. 
+    ‎
+3. Exclude this folder from all anti-virus programs on your PC - or you may experience problems. 
+    ‎
+4. If you have any games open that use anti-cheat software, please close them!<br/>
+    You must do this step each time you launch the tool.<br/> 
+    ‎
+    These steps are necessary due to the nature of the tool.<br/>
+    Don't worry - the source code of this tool will be made available at a later date.
+    ‎
+5. Right click on the OMSICrossingEditorTools .exe / Application file and click "Run as administrator".<br/>
+    Click "Yes" if prompted by User Account Control.<br/>
+    A small 🚦 traffic light icon should appear in your notification tray (bottom right of your taskbar)<br/>
+    ❗ **It is critical that you do this step before continuing onto the next one (due to a bug in OMSI Crossing Editor)** 
+    ‎
+6. Now, open your copy of the OMSI Crossing Editor.
+    ‎
+7. In the top-left, click Object > Load... and open your desired .sco file from OMSI 2\Sceneryobjects.<br/>
+    ❗ **It is critical that you have an object/crossing loaded at this stage.** 
+    ‎
+8. Right click on the previously mentioned 🚦 traffic light icon in your tray, and click "Enable tool" .
+    ‎
+9. Click on the OMSI Crossing Editor so it is the focused window.<br/>
+    ❗ **The tool will not work unless you have the OMSI Crossing Editor focused.** 
+    ‎
+10. Use the controls listed in the the table under the "Features" section above. 
+    ‎
+If you are opening a new object in the Crossing Editor, please disable the tool before doing so, and re-enable it after it is loaded.
+    ‎
+11. If you wish, you can change some settings by right clicking on the 🚦 traffic light icon in your tray, then "Edit settings..." - a text file with descriptions for each setting in your language will open. You can adjust various parameters here.<br/>
+    Once you have finished, save and close the file, then right click on the 🚦 traffic light icon in your tray, then "Reload settings".
+    ‎
+12. Once you have finished using OMSI Crossing Editor for the day, it's a good idea to right click on the 🚦 traffic light icon in your tray, and click "Exit".
 
 ‎
 ## Known issues:
 
-There are no currently known issues, however:
+- If you enable the tool when you're not supposed to (e.g., when OMSI Crossing Editor is not running), the tool will disable itself internally, but the GUI still reports that the tool is enabled. To re-use the tool you need to disable and re-enable the tool again via the GUI. For some reason theoretically correct code to fix this hasn't worked.
 
-- Languages & locales other than 'English (United Kingdom)' and special/unicode/cyrillic characters in file paths are untested.
-
-- Multi-language support is currently unavailable. If you would like this please open an issue. If it accumulates enough requests (comments) then I may consider refactoring the code to allow for easy translation with language files.
+- Polish and Finnish languages are only available in the tool itself; the documentation remains untranslated.
 
 ‎
 ## Digital Signing of Release Binaries:
@@ -124,27 +133,41 @@ All `*.exe` binary files of this project compiled by me are digitally self-signe
 
 If the serial number on your copy does not match this, or the digital certificate is missing the file has potentially been tampered with and should be deleted immediately.
 
-You can check this by right clicking on the `HelenClearTypeToggle` .exe / Application file > Properties > Digital Signatures > Select the one named "sjain882" > Details > View Certificate > Details > Serial Number.
+You can check this by right clicking on the `OMSICrossingEditorTools` .exe / Application file > Properties > Digital Signatures > Select the one named "sjain882" > Details > View Certificate > Details > Serial Number.
 
 ‎
 ## Building:
 
-There is no specific build process. Simply install Visual Studio Community (I used 2019) with .NET Desktop Development support, clone this repo, open the solution (`*.sln`) file, set the Configuration to Release | Any CPU and run Build > Build Solution.
+**You must build this project in x86 for it to work at runtime.** 
+
+Simply install Visual Studio Community (I used 2019) with .NET Desktop Development support, clone this repo, open the solution (`*.sln`) file, set the Configuration to Release | x86 and run Build > Build Solution.
+
+Required NuGet packages should already be configured and are present in the repository, but if you run into any issues, the packages I used are the latest versions of the ones listed in the credits below.
+
+WinputManager.dll and Memory.dll, however, must be present as a pre-built .dll in the Libraries folder when you press the Start button in Visual Studio.
+
+For binary distribution, they only need to be present in the tool's working directory. Please see the release .zip if further clarification is needed.
+
+Lower versions of Visual Studio should work, but I used VS 2019.
+
+‎
+## License:
+
+This software is licensed under the GNU General Public License v3 (GPL-3) licence. Please see https://www.gnu.
 
 ‎
 ## Credits:
 
-- **[sjain882](https://github.com/sjain882)** - Reverse engineering of HELEN, creating this tool
+- **[sjain882](https://github.com/sjain882)** - Reverse engineering of OMSI Crossing Editor, creating this tool
 
-- The **[LEGO Island Rebuilder](https://github.com/itsmattkc/LEGOIslandRebuilder/tree/net)** (old C# .NET version) project by **[MattKC](https://github.com/itsmattkc)** for a brilliant example of a simple backwards compatible executable patcher - code design inspiration & some small snippets
+- **[Nano](https://reboot.omsi-webdisk.de/community/user/13389-nano/)** - Testing & suggestions
 
-- The **[Large Address Aware](https://www.techpowerup.com/forums/threads/large-address-aware.112556/)** project - GUI inspiration
+- **[BowsyCh16](https://reboot.omsi-webdisk.de/community/user/7394-bowsych16/)**, **[Sobol](https://reboot.omsi-webdisk.de/community/user/7944-sobol/)**, **[volvorider](https://reboot.omsi-webdisk.de/community/user/9681-volvorider/)**  - Testing & translation
 
-- **[MrChips](https://fellowsfilm.com/members/mrchips.3079/#resources)** - Beta testing
+- **[Erilambus](https://reboot.omsi-webdisk.de/community/user/9046-erilambus/)**, **[HalberCode](https://reboot.omsi-webdisk.de/community/user/5160-halbercode/)**, **[volvorider](https://reboot.omsi-webdisk.de/community/user/9681-volvorider/)**  - Testing & translation
 
-‎
-## Disclaimer:
+- **Various C#.NET libraries** - **[ini-parser](https://github.com/rickyah/ini-parser)**, **[WInputManager](https://github.com/shy2net/WinputManager)**, **[Memory.dll.x86](https://github.com/erfg12/memory.dll/)**
 
-I am not a regular user of HELEN and am not very familiar with this software. It is entirely possible that in some corner of the application, simply opening your work with ClearType control disabled in HELEN could cause loss of work, and if saved - this could become permanent. It goes without saying that you should always backup your work regularly and before using this patcher for the first few times.
+- The **[Interactive Delphi Reconstructor](https://github.com/crypto2011/IDR)** project for making reverse-engineering OMSI Crossing Editor much easier
 
-This software is provided "As is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. **I cannot be held personally responsible if usage of this software results in loss of work or breakage of your HELEN installation**.
+- **[M&R Software](http://www.m-r-software.de/)** - Original developers of the OMSI Crossing Editor
