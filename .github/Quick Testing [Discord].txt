@@ -1,0 +1,53 @@
+**Helen ClearType Control Toggler - Beta Testing - CONFIDENTIAL DO NOT SHARE**
+
+NOTE: For each question that asks you something, there is no need to tell me the answer unless the answer is not as [Expected]. If it is not as [Expected] note the question number and tell me what happened instead.
+
+
+__GUI Testing__
+
+1. Extract "Helen Builds.7z"
+
+2. Open the tool. For any version:
+
+    2a. Open the file - is the version is the same as the folder name? [Expected: Yes]. Does it say "Yes" under "Will turn ClearType on/off"? [Expected: Yes]
+
+    2b. Set the bullet point option to "Disabled" and click "Save".
+
+    2c. Does it create HELEN.exe.bak in the same folder? [Expected: Yes] Does the message box that appears reflect this? [Expected: Yes]
+
+    2d. In the version info box, does the checksum change [Expected: Yes] and the "Yes" change to "No"? [Expected: Yes]
+
+3. Repeat steps 2a-2c for all other versions.
+
+4. For one of the versions:
+
+    4a. Open the file - is the version is the same as the folder name? [Expected: Yes]. Does it say "No" under "Will turn ClearType on/off"? [Expected: Yes]
+
+    4b. Set the bullet point option to "Disabled" and click "Save".
+
+    4c. Does the modified date of HELEN.exe.bak change in the folder? [Expected: No]. Does the message box that appears say "Patch successful!" and NOTHING else? [Expected: Yes]
+
+5. Open the "Dummy" version file. Does the version AND the "Will turn ClearType on/off" say Unknown? [Expected: Yes]
+
+6. Close and re-open the tool, then paste a full path (including HELEN.exe) into the text box WITHOUT clicking anything else. Does the version info update and the GUI become available and does it take a second or so for the program to register the change and update the version info box? [Expected: Yes]
+
+
+__CLI Testing__
+
+5. Create a shortcut the tool (Right click > Create shortcut) then right click on it and click Properties.
+
+6. After the last " character at the end of the Target box, add a space, then type --path then another space, then put the full path to one of the versions in quotes. Example:
+
+--path "C:\Files\HELEN.exe"
+
+7. Click OK and close it. Run the shortcut. Does it say "Valid path was specified, but no enable or disable command!"? [Expected: Yes]
+
+8. Re-open the properties. Add a space after the last character and type --enable. Click OK and close it.
+
+9. Run the shortcut. Does it say "Patch successful!"? [Expected: Yes]
+
+10. Delete the shortcut and re-do Step 5.
+
+11. After the last " character at the end of the Target box, add a space, then type --help.
+
+12. Do you get a help box? Is everything displaying fine? [Expected: Yes]. Look for any cut-off sentences, etc.

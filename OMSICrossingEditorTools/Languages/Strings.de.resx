@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>OMSI Crossing Editor Tools</value>
+  </data>
+  <data name="ConfirmDefaults" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die Standardeinstellungen wiederherstellen möchten?
+Ihre bestehenden Einstellungen werden in den Papierkorb verschoben.</value>
+  </data>
+  <data name="ErrorBadIniFile" xml:space="preserve">
+    <value>Die .ini-Konfigurationsdatei ist entweder nicht vorhanden oder ungültig!
+Möchten Sie die Standardeinstellungen erstellen/wiederherstellen (Ja), oder diese manuell korrigieren (Nein)?</value>
+  </data>
+  <data name="ErrorDefaultIni" xml:space="preserve">
+    <value>Die Standard-.ini-Konfigurationsdatei konnte nicht erstellt werden. Bitte versuche es später erneut.
+Wenn dieser Fehler weiterhin auftritt, wende dich bitte an den Autor dieser Software.</value>
+  </data>
+  <data name="ErrorFailedToEnableTool" xml:space="preserve">
+    <value>Das Tool konnte nicht aktiviert werden.
+Bitte wenden Sie sich an den Autor dieser Software.</value>
+  </data>
+  <data name="ErrorGeneric" xml:space="preserve">
+    <value>Interner Fehler. Das Programm wird beendet.</value>
+  </data>
+  <data name="ErrorMultipleInstances" xml:space="preserve">
+    <value>Es laufen mehrere Instanzen des OMSI Crossing Editors (OmsiObjEditP.exe)!
+Bitte schließen Sie alle weiteren Instanzen.
+Vergewissern Sie sich, dass das Programm läuft und eine Kreuzung geladen ist, bevor Sie dieses Tool aktivieren.</value>
+  </data>
+  <data name="ErrorToolNotRunning" xml:space="preserve">
+    <value>Der OMSI Crossing Editor (OmsiObjEditP.exe) wird nicht ausgeführt!
+Vergewissern Sie sich, dass das Programm läuft und eine Kreuzung geladen ist, bevor Sie dieses Tool aktivieren.</value>
+  </data>
+  <data name="FirstLaunchMessage" xml:space="preserve">
+    <value>Wenn Sie Spiele geöffnet haben, die Anti-Cheat-Software verwenden, schließen Sie diese bitte sofort (aus technischen Gründen)!
+Sie sollten dieses Tool auch von allen Antivirenprogrammen ausschließen.
+Sie werden beim nächsten Mal nicht daran erinnert!</value>
+  </data>
+  <data name="FirstLaunchMessageTitle" xml:space="preserve">
+    <value>OMSI Crossing Editor Tools - Erste Startnachricht</value>
+  </data>
+  <data name="iniDefaults1" xml:space="preserve">
+    <value>; Beim Start werden diese Werte gesetzt</value>
+  </data>
+  <data name="iniDefaults2" xml:space="preserve">
+    <value>; Die anfänglich vorgegebenen Werte entsprechen dem Verhalten des Originalwerkzeugs</value>
+  </data>
+  <data name="iniHeader" xml:space="preserve">
+    <value>; OMSI Crossing Editor Tools - Einstellungen</value>
+  </data>
+  <data name="iniLimits" xml:space="preserve">
+    <value>; Nützlich für schnelle Mausrad-Scrollgeschwindigkeiten</value>
+  </data>
+  <data name="iniScroll1" xml:space="preserve">
+    <value>; Die Beträge, um der die Entfernung beim Scrollen mit dem Mausrad angepasst wird</value>
+  </data>
+  <data name="iniScroll2" xml:space="preserve">
+    <value>; Nach Oben scrollen vergrößert die Entfernung und nach unten scrollen verkleinert diese...</value>
+  </data>
+  <data name="iniScroll3" xml:space="preserve">
+    <value>; ...derzeit kann dies noch nicht geändert werden</value>
+  </data>
+  <data name="iniSection" xml:space="preserve">
+    <value>; [Abschnitt]</value>
+  </data>
+  <data name="iniSetting" xml:space="preserve">
+    <value>; Einstellung = Wert</value>
+  </data>
+  <data name="iniUsage" xml:space="preserve">
+    <value>; Verwendung:</value>
+  </data>
+  <data name="iniValidValuesNumbers" xml:space="preserve">
+    <value>; Gültige Werte: Nur Zahlen (z.B. 1.2, 0.1, 0, 1, 2, 45)</value>
+  </data>
+  <data name="ReferToReadme" xml:space="preserve">
+    <value>Bitte lesen Sie die Readme.txt, die im Download enthalten ist.</value>
+  </data>
+  <data name="TargetName" xml:space="preserve">
+    <value>OMSI Crossing Editor</value>
+  </data>
+  <data name="TrayMenuDisable" xml:space="preserve">
+    <value>Tool deaktivieren</value>
+  </data>
+  <data name="TrayMenuEdit" xml:space="preserve">
+    <value>Einstellungen bearbeiten...</value>
+  </data>
+  <data name="TrayMenuEnable" xml:space="preserve">
+    <value>Tool einschalten</value>
+  </data>
+  <data name="TrayMenuExit" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="TrayMenuHelp" xml:space="preserve">
+    <value>Hilfe &amp;&amp; Info...</value>
+  </data>
+  <data name="TrayMenuReload" xml:space="preserve">
+    <value>Einstellungen neu laden</value>
+  </data>
+  <data name="TrayMenuRestore" xml:space="preserve">
+    <value>Standardeinstellungen wiederherstellen...</value>
+  </data>
+</root>
