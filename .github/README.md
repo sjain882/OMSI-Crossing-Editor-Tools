@@ -10,6 +10,8 @@
 [![FRANÇAIS & DEUTSCH](https://img.shields.io/badge/-Français%20&%20Deutsch-%2301579B?style=flat)]()
 
 Better camera controls for [OMSI 2](https://store.steampowered.com/app/252530)'s Crossing Editor!
+
+***This documentation may be easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md).***
 </div>
 
 ‎
@@ -71,6 +73,8 @@ Please note: Additional functionality such as customization of modifier keys is 
 
 ‎
 ## Installation & Usage (!)
+
+***🔴 These instructions are much easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md) or with colour formatting on [OMSI-WebDisk](). 🔴***
 
 **---> ❗ NOTE - These are not what you expect! It is critical that you follow all the below steps and in the exact order given! ❗ <---**
 
