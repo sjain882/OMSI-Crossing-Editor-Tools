@@ -21,9 +21,9 @@ In this tool, the only way to control the zoom level of the camera is to click a
 
 On top of this, the default camera FoV (Field-of View) value is locked at 30°, compared to 45° inside OMSI 2's main game, which is slightly disorienting.
 
-NOTE: For the best experience, if you are comfortable with using the 3D modelling software "Blender" (the ability to create 3D models is a must for high quality maps anyway), you should use [this](https://strefa-omsi.pl/Watek-OMSI-2-Automatyczny-generator-pojazdow-i-obiektow-scenerii-blender-2-8--27135) plugin for Blender v2.8+ to create and export AI Traffic paths from bezier curves.
+❗ **NOTE:** For the best experience, if you are comfortable with using the 3D modelling software "Blender" (the ability to create 3D models is a must for high quality maps anyway), you should use [this](https://strefa-omsi.pl/Watek-OMSI-2-Automatyczny-generator-pojazdow-i-obiektow-scenerii-blender-2-8--27135) plugin for Blender v2.8+ to create and export AI Traffic paths from bezier curves.
 
-This partially removes the need to use the horrible outdated OMSI Crossing Editor. For other functionality such as setting up traffic lights, however, you will be limited to the OMSI Crossing Editor, where you can still make use my tool to improve the navigation experience.
+This partially removes the need to use the horrible outdated OMSI Crossing Editor. For other functionality such as setting up traffic lights, however, you will be limited to the OMSI Crossing Editor, where you can still make use of my tool to improve the navigation experience.
 
 ‎
 ## Features
