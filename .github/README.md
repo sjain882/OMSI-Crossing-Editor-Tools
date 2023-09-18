@@ -13,7 +13,7 @@ Better camera controls for [OMSI 2](https://store.steampowered.com/app/252530)'s
 
 ***This documentation may be easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md).***
 
-***It is also available in Français & Deutsch at [OMSI-WebDisk](https://reboot.omsi-webdisk.de/file/10958-omsi-crossing-editor-tools/).***
+*It is also available in Français & Deutsch at [OMSI-WebDisk](https://reboot.omsi-webdisk.de/file/10958-omsi-crossing-editor-tools/).*
 </div>
 
 ‎
