@@ -12,6 +12,8 @@
 Better camera controls for [OMSI 2](https://store.steampowered.com/app/252530)'s Crossing Editor!
 
 ***This documentation may be easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md).***
+
+***It is also available in Français & Deutsch at [OMSI-WebDisk](https://reboot.omsi-webdisk.de/file/10958-omsi-crossing-editor-tools/).***
 </div>
 
 ‎
@@ -74,7 +76,7 @@ Please note: Additional functionality such as customization of modifier keys is 
 ‎
 ## Installation & Usage (!)
 
-***🔴 These instructions are much easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md) or with colour formatting on [OMSI-WebDisk](). 🔴***
+***🔴 These instructions are much easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md) or with colour formatting at [OMSI-WebDisk](https://reboot.omsi-webdisk.de/file/10958-omsi-crossing-editor-tools/). 🔴***
 
 **---> ❗ NOTE - These are not what you expect! It is critical that you follow all the below steps and in the exact order given! ❗ <---**
 
