@@ -76,7 +76,7 @@ Please note: Additional functionality such as customization of modifier keys is 
 ‎
 ## Installation & Usage (!)
 
-***🔴 These instructions are much easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md) or with colour formatting at [OMSI-WebDisk](https://reboot.omsi-webdisk.de/file/10958-omsi-crossing-editor-tools/). 🔴***
+***🔴 These instructions are much easier to read at [full width](https://github.com/sjain882/OMSI-Crossing-Editor-Tools/blob/main/.github/README.md#installation--usage-) or with colour formatting at [OMSI-WebDisk](https://reboot.omsi-webdisk.de/file/10958-omsi-crossing-editor-tools/). 🔴***
 
 **---> ❗ NOTE - These are not what you expect! It is critical that you follow all the below steps and in the exact order given! ❗ <---**
 
@@ -88,10 +88,10 @@ Otherwise, no action is required.
 
 1. Ensure you have OMSI Crossing Editor downloaded correctly:
 
-    --- ❗ **The file name must be OmsiObjEditP - the tool will not work if you have renamed it!**<br/>
+    --- ❗ **The file name must be `OmsiObjEditP` - the tool will not work if you have renamed it!**<br/>
     --- The file must be located in the SDK folder of your OMSI 2 installation folder, so OMSI Crossing Editor can work correctly.<br/>
-    --- e.g., C:\Program Files (x86)\Steam\steamapps\common\OMSI 2\SDK\OmsiObjEditP.exe<br/>
-    --- You can download the OMSI Crossing Editor from here (extract to the OMSI 2\SDK folder)
+    --- e.g., `C:\Program Files (x86)\Steam\steamapps\common\OMSI 2\SDK\OmsiObjEditP.exe`<br/>
+    --- You can download the OMSI Crossing Editor from [here](http://www.omnibussimulator.de/download/OMSI-SDK_Tools_1.00.zip) ([mirror](https://web.archive.org/web/20200518144911/http://www.omnibussimulator.de/download/OMSI-SDK_Tools_1.00.zip)) (extract to the `OMSI 2\SDK` folder)
     ‎
 2. Download the OMSI Crossing Editor Tools .zip archive, open it, and extract the contents of the "Tool" folder to any folder on your PC. 
     ‎
@@ -110,7 +110,7 @@ Otherwise, no action is required.
     ‎
 6. Now, open your copy of the OMSI Crossing Editor.
     ‎
-7. In the top-left, click Object > Load... and open your desired .sco file from OMSI 2\Sceneryobjects.<br/>
+7. In the top-left, click `Object` > `Load...` and open your desired `.sco` file from `OMSI 2\Sceneryobjects`.<br/>
     ❗ **It is critical that you have an object/crossing loaded at this stage.** 
     ‎
 8. Right click on the previously mentioned 🚦 traffic light icon in your tray, and click "Enable tool" .
